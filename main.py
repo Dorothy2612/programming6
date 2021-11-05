@@ -1,19 +1,13 @@
 import sys
-def bigletter():
-    for item in (sys.argv):
-        print(item.capitalize())
-def n():
-    for item in (sys.argv):
-        print(item.count("is"))
-
-
-
-if __name__ == '__main__':
-    print(f"Arguments count: {len(sys.argv)}")
-    for item in (sys.argv):
+def word2(a):
+    m=a.replace(" ", "\n")
+    print(m)
+def word1(a):
+    s=a.split(' ')
+    for item in s:
         print(item)
-    bigletter()
-    n()
-
-
+if __name__ == '__main__':
+    user = input("Enter the sentence: ")
+    word1(user)
+    word2(user)
 
